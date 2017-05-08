@@ -14,7 +14,7 @@
 		 			<h4>Our Bunker</h4>
 		 			<div class="hline-w"></div>
 		 			<p>
-		 				Sistem Informasi<br/>
+		 				Sistem Informasi 2015<br/>
 		 				Universitas Airlangga<br/>
 		 				Surabaya<br/>
 		 			</p>
