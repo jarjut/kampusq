@@ -1,0 +1,204 @@
+/*---------------------------- Images Slider------------------------------ */
+
+* {
+     margin: 0 auto;
+     padding: 0;
+}
+
+.slider {
+     width: 1290px; /* important to be same as image width */
+     height: 331px; /* important to be same as image height */
+     position: relative; /* important */
+     overflow: hidden; /* important */
+}
+
+.slider ul {
+     list-style: none;
+}
+
+/* keyframes #anim_slider */
+@-webkit-keyframes anim_slider {
+     0% {
+             opacity: 0;
+     }
+     6% {
+             opacity: 1;
+     }
+     24% {
+             opacity: 1;
+     }
+     30% {
+             opacity: 0;
+     }
+     100% {
+             opacity: 0;
+     }
+}
+
+@-moz-keyframes anim_slider {
+     0% {
+             opacity: 0;
+     }
+     6% {
+             opacity: 1;
+     }
+     24% {
+             opacity: 1;
+     }
+     30% {
+             opacity: 0;
+     }
+     100% {
+             opacity: 0;
+     }
+}
+
+/* animation */
+.slider ul li {
+     position: absolute;
+     opacity: 0;
+     top: 0;
+
+     -webkit-animation-name: anim_slider;
+     -webkit-animation-duration: 24.0s;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: normal;
+     -webkit-animation-delay: 0;
+     -webkit-animation-play-state: running;
+     -webkit-animation-fill-mode: forwards;
+
+     -moz-animation-name: anim_slider;
+     -moz-animation-duration: 24.0s;
+     -moz-animation-timing-function: linear;
+     -moz-animation-iteration-count: infinite;
+     -moz-animation-direction: normal;
+     -moz-animation-delay: 0;
+     -moz-animation-play-state: running;
+     -moz-animation-fill-mode: forwards;
+}
+
+/* animation delays */
+.slider ul li:nth-child(2), .slider ul li:nth-child(2) div {
+     -webkit-animation-delay: 6.0s;
+     -moz-animation-delay: 6.0s;
+}
+.slider ul li:nth-child(3), .slider ul li:nth-child(3) div {
+     -webkit-animation-delay: 12.0s;
+     -moz-animation-delay: 12.0s;
+}
+.slider ul li:nth-child(4), .slider ul li:nth-child(4) div {
+     -webkit-animation-delay: 18.0s;
+     -moz-animation-delay: 18.0s;
+}
+
+.slider ul li a {
+     text-decoration: none;
+     color: #fff;
+}
+
+.slider ul li p {
+     color: #fff;
+     font-size: 12px;
+     margin-top: -5px;
+     padding: 10px 15px;
+     filter: alpha(opacity=80);
+     -moz-opacity: 0.8;
+     -khtml-opacity: 0.8;
+     opacity: 0.8;
+} .slider ul li img a {
+     display: block;
+     float: left;
+     width: 100%;
+}
+
+/* keyframes #captions */
+@-webkit-keyframes captions {
+     0% {
+             top: 100%;
+             opacity: 0;
+     }
+     5% {
+             top: 80%;
+             opacity: 1;
+     }
+     20% {
+             top: 80%;
+             opacity: 1;
+     }
+     25% {
+             top: 100%;
+             opacity: 0;
+     }
+     100% {
+             top: 100%;
+             opacity: 0;
+     }
+}
+
+@-moz-keyframes captions {
+     0% {
+             top: 100%;
+             opacity: 0;
+     }
+     5% {
+             top: 80%;
+             opacity: 1;
+     }
+     20% {
+             top: 80%;
+             opacity: 1;
+     }
+     25% {
+             top: 100%;
+             opacity: 0;
+     }
+     100% {
+             top: 100%;
+             opacity: 0;
+     }
+}
+
+.slider h3 {
+     text-transform: uppercase;
+     color: #fff;
+     font-size: 14px;
+     line-height: 14px;
+     padding: 10px 15px 0;
+     filter: alpha(opacity=80);
+     -moz-opacity: 0.8;
+     -khtml-opacity: 0.8;
+     opacity: 0.8;
+}
+
+.slider ul li div {
+     text-align: center;
+     color: #fff;
+     background-color: rgba(45, 44, 44, 0.7);
+     background: rgba(45, 44, 44, 0.7);
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     bottom: 0;
+     width: 500px; /* important to be same as image width */
+     z-index :999;
+
+/* css3 animation */
+     -webkit-animation-name: captions;
+     -webkit-animation-duration: 24.0s;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: normal;
+     -webkit-animation-delay: 0;
+     -webkit-animation-play-state: running;
+     -webkit-animation-fill-mode: forwards;
+
+     -moz-animation-name: captions;
+     -moz-animation-duration: 24.0s;
+     -moz-animation-timing-function: linear;
+     -moz-animation-iteration-count: infinite;
+     -moz-animation-direction: normal;
+     -moz-animation-delay: 0;
+     -moz-animation-play-state: running;
+     -moz-animation-fill-mode: forwards;
+}
